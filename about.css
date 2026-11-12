@@ -1,0 +1,103 @@
+.navigation {
+    background-color: skyblue;
+}
+.navbar ul {
+    background-color: rgb(221, 232, 237);
+    display: flex;
+    padding: 12px 20px;
+    justify-content: right;
+    margin: 0;   
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;    
+}
+.navbar ul a{
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+a {
+    text-decoration: none;
+    color: rgb(72, 9, 233);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+.education-card,
+.skill-card,
+.achievement-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.education-card:hover,
+.skill-card:hover,
+.achievement-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+.icon {
+  font-size: 2.2rem;
+  width: 70px;
+  height: 70px;
+}
+.education-container,
+.skills-container,
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.education-card,
+.skill-card,
+.achievement-card {
+  width: 100%; /* Replaces width: 320px */
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .education-container,
+  .skills-container,
+  .achievements-container {
+    grid-template-columns: 1fr;
+  }
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.about ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+footer {
+    background-color: grey;
+    padding: 20px 0;
+    text-align: center;
+}
+.skills {
+    background-color: skyblue;
+}
+.achievements {
+    background-color: rgb(221, 232, 237);
+}
+.education {
+    background-color: rgb(221, 232, 237);
+}
+body {
+    background-color: rgb(221, 232, 237);
+}
